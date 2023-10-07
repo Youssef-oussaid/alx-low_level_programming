@@ -1,9 +1,9 @@
 #include <stdio.h>
-/*
- * this is a a function
- * that always returns a 0
- */
 int main(void)
+/*
+ * this is the main funtion
+ * it returns an ant
+ */
 {
 puts("\"Programming is like building a multilingual puzzle");
 return (0);
