@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- * this is a a function 
+ * this is a a function
  * that always returns a 0
  */
 int main(void)
