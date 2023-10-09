@@ -1,8 +1,16 @@
 #include <stdio.h>
+/**
+ * main - entry point
+ *
+ * Description: a
+ *
+ * Return: Always 0 (success)
+ */
+
 
 int main(void)
 {
-	char alph = 'a'; 
+	char alph = 'a';
 
 	while (alph <= 'z')
 	{
