@@ -8,8 +8,13 @@
  * Return: Always 0 (success)
  */
 
-int main()
+int main(void)
 {
-	print_putchar();
+	char str[] = "_putchar";
+	int t;
+
+	for (t = 0; t < 8; t++)
+		_putchar(str[]);
+		_putchar('\n');
 	return (0);
 }
