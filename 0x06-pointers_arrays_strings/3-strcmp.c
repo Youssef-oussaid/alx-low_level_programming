@@ -5,7 +5,7 @@
  *
  * @s1: a pointer that stores the first string.
  *
- * @s2: a pointer that stores the second string. 
+ * @s2: a pointer that stores the second string.
  *
  * Return: always 0.
  */
