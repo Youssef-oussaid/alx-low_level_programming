@@ -23,4 +23,6 @@ int isLower(char c);
 
 int isDelimiter(char c);
 
+char *leet(char *c);
+
 #endif /* MAIN_H */
