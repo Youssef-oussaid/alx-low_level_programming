@@ -1,10 +1,12 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_diagsums - function
  * @a: array
  * @size: size of array
  */
+
 void print_diagsums(int *a, int size)
 {
 	int i, s1 = 0, s2 = 0;
