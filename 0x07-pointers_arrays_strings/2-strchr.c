@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * strchr - searches for a char.
+ * _strchr - searches for a char.
  * @s: a string.
  * @c: a character.
  * Return: 0
