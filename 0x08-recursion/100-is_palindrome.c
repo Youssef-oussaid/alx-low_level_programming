@@ -35,7 +35,7 @@ int is_palindrome(char *s)
  * @s: pointer
  * @start: int
  * @end: int
- * @end: int
+ * @mod: int
  * Return: 0 or 1
  */
 
