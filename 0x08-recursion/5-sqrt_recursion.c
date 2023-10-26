@@ -3,6 +3,7 @@
 /**
  * _sqrt_recursion - function
  * @n: value
+ * @val: value
  * Return: n
  */
 
@@ -22,7 +23,7 @@ int _sqrt_recursion(int n)
 int square(int n, int val)
 {
 	if (val * val == n)
-		return (1);
+		return (val);
 	if (val * val < n)
 		return (square(n, val + 1));
 	else
