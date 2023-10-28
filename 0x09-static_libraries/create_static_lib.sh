@@ -1,1 +1,1 @@
-gcc -c *.c ; ar rc liball.ma *.o
+gcc -c *.c ; ar rc liball.a *.o
