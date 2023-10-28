@@ -2,7 +2,8 @@
 
 /**
  * main - entry point
- *
+ * @argc: parameter
+ * @argv: ana array parameter
  * Return: 0
  */
 
