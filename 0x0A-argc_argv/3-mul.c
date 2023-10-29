@@ -3,9 +3,9 @@
 
 /**
  * main - entry point
- * @argc: counter
- * @argv: an array
- * Retun: 0 or 1
+ * @argc: a counter
+ * @argv: an array of strigs
+ * Return: 0 if successful.
  */
 
 int main(int argc, char *argv[])
