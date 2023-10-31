@@ -9,7 +9,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int size1 = 0, size2 = 0;
+	int size1 = 0, size2 = 0, i = 0, j = 0;
 	char *n;
 
 	if (s1 == NULL)
@@ -31,18 +31,17 @@ char *str_concat(char *s1, char *s2)
 
 	else
 	{
-		int i;
 
-		for (i = 0; i < size2; i++)
+		for (; i < size2; i++)
 		{
-			int j;
 
-			for (j = 0; j < size1; j++)
+			for (; j < size1; j++)
 			{
 				n[j] = s1[j];
 			}
 		n[i + j] = s2[i];
 		}
 	}
+	n[i + j] = '\0';
 	return (n);
 }
