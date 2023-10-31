@@ -18,7 +18,7 @@ char *str_concat(char *s1, char *s2)
 	while (s2[size2] != '\0')
 		size2++;
 
-	n = malloc((size1 + size2) * sizeof(char));
+	n = malloc((size1 + size2) * sizeof(char) + 1);
 
 	if (n == NULL)
 		return (NULL);
