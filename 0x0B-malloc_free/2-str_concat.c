@@ -29,19 +29,16 @@ char *str_concat(char *s1, char *s2)
 	if (n == NULL)
 		return (NULL);
 
-	else
-	{
-
-		for (; i < size2; i++)
-		{
-
-			for (; j < size1; j++)
-			{
-				n[j] = s1[j];
-			}
-		n[i + j] = s2[i];
-		}
+	 for (i = 0; i < size1; i++)
+  	{
+		n[i] = s1[i];
 	}
+
+	for (j = 0; j < size2; j++)
+	{
+		n[i + j] = s2[j];
+	}
+
 	n[i + j] = '\0';
 	return (n);
 }
