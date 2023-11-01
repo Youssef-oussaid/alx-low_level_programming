@@ -9,32 +9,29 @@
 
 int **alloc_grid(int width, int height)
 {
-	int **grid, i, j;
+	int **tab, i, j;
 
-	grid = (int **)malloc(width * sizeof(**grid));
+	tab = malloc(sizeof(**tab) * height);
 
-	if (width <= 0 || height <= 0 || grid == 0)
+	if (width <= 0 || height <= 0 || tab == 0)
+	{
 		return (NULL);
-
-	for (i = 0; i < width; i++)
+	}
+	else
 	{
-		grid[i] = (int *)malloc(height * sizeof(**grid));
-
-		if (grid[i] == 0) 
+		for (i = 0; i < height; i++)
 		{
-			while (i--)
-				free(grid[i]);
-			free(grid);
-			return (NULL);
+			tab[i] = malloc(sizeof(**tab) * width);
+			if (tab[i] == 0)
+			{
+				while (i--)
+					free(tab[i]);
+				free(tab);
+				return (NULL);
+			}
+			for (j = 0; j < width; j++)
+				tab[i][j] = 0;
 		}
 	}
-
-	for (i = 0; i < width; i++)
-	{
-		for (j = 0; j < height; j++)
-		{
-			grid[i][j] = 0;
-		}
-	}
-	return (grid);
+	return (tab);
 }
