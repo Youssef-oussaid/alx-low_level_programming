@@ -1,6 +1,25 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+
+/**
+ * _memset - a function that sets memory to 0
+ * @s: the array to set
+ * @b: the value with which to set
+ * @n: the number of blocks to set
+ * Return: a pointer
+ */
+
+char *_memset(char *s,char b, unsigned int n)
+{
+	char *ptr = s;
+
+	while (n--)
+		*s++ = b;
+
+	return (ptr);
+}
+
 /**
  * _calloc - a function
  * @nmemb: number of memory blocks
@@ -10,7 +29,6 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int i;
 	void *array;
 
 	if (nmemb == 0 || size == 0)
@@ -19,15 +37,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	array = malloc(nmemb * sizeof(char));
 
 	if (array == 0)
-	{
 		return (NULL);
-	}
-	else
-	{
-		for (i = 0; i < (nmemb * size); i++)
-		{
-			array[i] = 0;
-		}
-	}
+
+	_memset(array, 0, sizeof(int));
+
 	return (array);
 }
