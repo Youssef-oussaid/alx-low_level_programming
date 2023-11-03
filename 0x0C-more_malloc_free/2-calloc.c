@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
  * _memset - a function that sets memory to 0
@@ -10,7 +8,7 @@
  * Return: a pointer
  */
 
-char *_memset(char *s,char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	char *ptr = s;
 
