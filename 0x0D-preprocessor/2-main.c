@@ -2,13 +2,11 @@
 
 /**
  * main - entry point
- *@argc: counter
- @argv: an array
  * Return: always 0
  */
 
-int main(int argc, char *argv[])
+int main(void)
 {
-	printf("%s\n", argv[argc - 1]);
+	printf("%s\n", __FILE__);
 	return (0);
 }
