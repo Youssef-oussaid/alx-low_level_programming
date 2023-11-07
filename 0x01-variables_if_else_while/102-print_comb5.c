@@ -11,10 +11,10 @@ int main(void)
 
 	while (fir <= 99)
 	{
-		fir = sec;
+		sec = fir;
 		while (sec <= 99)
 		{
-			if (fir != sec)
+			if (sec != fir)
 			{
 				putchar((fir / 10) + 48);
 				putchar((fir % 10) + 48);
@@ -31,5 +31,6 @@ int main(void)
 		}
 		fir++;
 	}
+	putchar('\n');
 	return (0);
 }
