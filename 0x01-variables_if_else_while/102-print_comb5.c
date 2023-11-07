@@ -31,4 +31,5 @@ int main(void)
 		}
 		fir++;
 	}
+	return (0);
 }
