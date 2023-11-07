@@ -1,6 +1,5 @@
-#include <stdlib>
-#include <string.h>
 #include "dog.h"
+#include <stdlib.h>
 
 /**
  * free_dog - frees malloc
