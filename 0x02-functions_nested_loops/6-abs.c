@@ -2,7 +2,7 @@
 
 /**
  * _abs - a function
- * @int: integer
+ * @num: integer
  * Return: an int
  */
 
