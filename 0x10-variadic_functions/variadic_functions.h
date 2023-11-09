@@ -11,7 +11,7 @@
  * @f: function
  */
 
-typrdef struct
+typedef struct token
 {
 	char *token;
 	void (*f)(char *, va_list);
