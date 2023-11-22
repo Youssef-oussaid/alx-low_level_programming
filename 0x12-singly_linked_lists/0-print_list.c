@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 #include "lists.h"
 
 /**
@@ -21,7 +20,7 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			printf("[%d] %s\n", strlen(temp->str), temp->str);
+			printf("[%d] %s\n", _strlen(temp->str), temp->str);
 		}
 		temp = temp->next;
 		count++;
