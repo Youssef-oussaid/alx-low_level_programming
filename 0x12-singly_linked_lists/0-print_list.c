@@ -1,28 +1,35 @@
-#include <stdio.h>
 #include "lists.h"
+
+/**
+ * _strlen - returns the length of a string
+ * @s: a string
+ * Return an int
+ */
+int _strlen(char *s)
+{
+	int i = 0;
+
+	if (!s)
+		return (0);
+	while (*s++)
+		i++;
+	return (i);
+}
 
 /**
  * print_list - prints the content of a list
  * @h: a pointer to a struct of type list_t
  * Return: 0
  */
-
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
 	const list_t *temp = h;
 
-	while (temp != NULL)
+	while (h)
 	{
-		if (temp->str == NULL)
-		{
-			printf("[0] (nil)\n");
-		}
-		else
-		{
-			printf("[%d] %s\n", _strlen(temp->str), temp->str);
-		}
-		temp = temp->next;
+		printf("[%d] %s\n", _strlen(h->str), h->str ? h->str : "(nil)");
+		h = h->next;
 		count++;
 	}
 	return (count);
