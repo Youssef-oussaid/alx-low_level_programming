@@ -3,7 +3,7 @@
 /**
  * listint_len - counts the nodes
  * @h: a pointer to a struct
- * Return the num of nodes
+ * Return: the num of nodes
 */
 
 size_t listint_len(const listint_t *h)
