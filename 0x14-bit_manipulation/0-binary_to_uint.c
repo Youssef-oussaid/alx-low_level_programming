@@ -10,7 +10,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int total = 0;
 	unsigned int decval = 1;
-	unsigned stringLen = strlen(b);
+	unsigned int stringLen = strlen(b);
 
 	if (b == NULL)
 		return (total);
