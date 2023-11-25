@@ -12,13 +12,13 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int decval = 1;
 	unsigned int stringLen = strlen(b);
 
-	if (b == NULL)
-		return (total);
+	if (!b)
+		return (0);
 
 	for (int i = 0; i <= stringLen - 1; i++)
 	{
-		if (b[i] != '0' && b[i] != '1')
-			return (total);
+		if (*b != '0' && *b != '1')
+			return (0);
 	}
 
 	for (int i = stringLen - 1; i >= 0; i--)
