@@ -4,7 +4,7 @@
  * read_textfile - reads text from a file
  * @filename: file name
  * @letters: bytes to read
- * 
+ *
  * Return: bytes printed
 */
 
