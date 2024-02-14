@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * dlintint_len - length
+ * dlistint_len - length
  * @h: address of head
  * Return: size
 */
