@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/oussa/Downloads/code/alx-low_level_programming/simple_shell",
-      "program": "c:/Users/oussa/Downloads/code/alx-low_level_programming/simple_shell/build/Debug/outDebug",
+      "cwd": "c:/Users/oussa/Downloads/code/alx-low_level_programming/0x17-doubly_linked_lists",
+      "program": "c:/Users/oussa/Downloads/code/alx-low_level_programming/0x17-doubly_linked_lists/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
