@@ -18,7 +18,7 @@ hash_node_t *make_hash_node(const char *key, const char *value)
 	if (node->key == NULL)
 		{
 			free(node);
-			return (NULL)
+			return (NULL);
 		}
 	node->value = strdup(value);
 	if (node->value == NULL)
