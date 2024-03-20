@@ -1,7 +1,7 @@
-all: generate
-
 CC = gcc
-SRC = *.c
+SRC = $(wildcard *.c)
 
-generate: SRC
-	CC -o school $(SRC)
+all: school
+
+school: $(SRC)
+	$(CC) -o $@ $^
