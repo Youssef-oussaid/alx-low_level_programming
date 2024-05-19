@@ -111,7 +111,7 @@ void print_search(int *array, int first, int last)
 			printf(", ");
 		}
 		index = first++;
-		printf("%d", array[index++]);
+		printf("%d", array[first++]);
 	}
 	printf("\n");
 }
