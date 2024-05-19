@@ -110,8 +110,9 @@ void print_search(int *array, int first, int last)
 		{
 			printf(", ");
 		}
-		index = first++;
-		printf("%d", array[first++]);
+		printf("%d", array[first]);
+		first++;
+		index++;
 	}
 	printf("\n");
 }
